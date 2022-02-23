@@ -1,0 +1,38 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+ 
+    <ion-title>
+      <ion-icon name="information-circle-outline"></ion-icon>
+
+      Information Générale
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <img src="./../../assets/icon/1.png" width="25%" height="15%" style="margin-left: 35%; margin-top: 3%;">
+ 
+  <ion-item>
+    <ion-label>latitude</ion-label>
+    <ion-input></ion-input>
+  </ion-item>
+  
+  <ion-item>
+    <ion-label position="floating">longitude</ion-label>
+    <ion-input></ion-input>
+  </ion-item>
+  <img src="./../../assets/icon/2.png" width="25%" height="15%" style="margin-left: 35%; margin-top: 3%;">
+   
+  <ion-item>
+    <ion-label position="fixed">Vitesse</ion-label>
+    <ion-input></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="fixed">Date </ion-label>
+    <ion-input></ion-input>
+  </ion-item>
+  <img  (click)="sendsms()"  src="./../../assets/icon/n3.PNG" width="70%" height="25%" style="margin-left: 15%;  margin-top: 3%;">
+  <button ion-item *ngFor="let m of messages"  >
+    {{ m.body }}
+  </button>
+</ion-content>
