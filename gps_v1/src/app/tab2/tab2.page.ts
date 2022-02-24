@@ -6,7 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['tab2.page.scss']
 })
 export class Tab2Page {
-
+  mapok:any=true;
+  x:any=43.934840;
+  y:any=2.078460;
   constructor() {}
 
 }
