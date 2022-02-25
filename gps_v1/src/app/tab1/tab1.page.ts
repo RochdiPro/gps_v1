@@ -76,7 +76,7 @@ export class Tab1Page {
 
     val = tab[4].split(':')
     localStorage.setItem("date", JSON.stringify(val[1]+":"+val[2]+":"+val[3]+":"+val[4])); //store date
-    this.date=val[1]
+    this.date=val[1]+":"+val[2]+":"+val[3]+":"+val[4]
   }
  
   sleep(ms) {
