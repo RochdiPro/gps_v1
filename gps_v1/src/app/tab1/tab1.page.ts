@@ -92,6 +92,8 @@ export class Tab1Page {
      this.sendsms()
      this.chercher=false;
      await this.delai(10000);
+
+     // test
     this.getSMS()
     this.chercher=true;
   }
